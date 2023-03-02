@@ -17,3 +17,12 @@ print(df.Name[0:4])
 
 print("----------------------------------")
 print(df[['Name','Type 1','Type 2']][0:4])
+
+print("----------------------------------")
+print(df.iloc[1])       #returns the raw where index is 1
+
+print("----------------------------------")
+print(df.iloc[1:5])
+
+print("----------------------------------")
+print(df.iloc[1,2])     #returns exact location
