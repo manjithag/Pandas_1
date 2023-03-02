@@ -1,3 +1,5 @@
+## Reading data
+
 import pandas as pd
 
 df = pd.read_csv('pokemon_data.csv')
@@ -26,3 +28,13 @@ print(df.iloc[1:5])
 
 print("----------------------------------")
 print(df.iloc[1,2])     #returns exact location
+
+print("----------------------------------")
+
+for index, row in df.iterrows():                #index = row index      #row = data series of each row
+        print(index, row[['Name','Type 1']])
+
+print("----------------------------------")
+print(df.loc[df['Type 1'] == "Fire"])
+
+
